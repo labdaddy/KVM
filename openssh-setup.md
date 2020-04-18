@@ -26,10 +26,11 @@
 - Logging in to a remote machine with `ssh ipaddress' the remote machine will assume you intend to use the same username you are currently logged in as.
 - Logging in as `ssh username@ipaddress` you will be prompted for the password of the user you are attempting to login as.
 
-##### Key based authentication is even more secure than logging in with passwords and should be setup right away.
+##### Key based authentication is even more secure than logging in with passwords and should be setup right away. The generated key will be distributed to the other servers to alow authentication to these servers from the master machine.
 - Generate a public key on the first server: `ssh-keygen -t rsa`. This creates an RSA type public key to share with the remote server.
 - The system  will prompt for a passphrase which should be different than any password used on either system.
 - Verify key has been created: `cd .ssh`
 - List the contents of the ssh directory: `cd .ssh` then `ls`
-- Should show this: id_rsa id_rsa.pub known_hosts
-- Copy the 
+- Should show this: id_rsa id_rsa.pub known_hosts The config file has the servers login details, known_hosts file has the public key, id_rsa.pub has the public key of of my user account and the id_rsa file has the private key of my user account.
+- Copy the id_rs ssh-copy-id -i id_rsa.pub server1
+- 
