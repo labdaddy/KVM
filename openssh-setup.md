@@ -5,7 +5,7 @@
 - To stop ssh: `systemctl stop sshd`
 - To enable ssh to start automatically after each system reboot by using the systemctl command: `sudo systemctl enable sshd`
 - To disable ssh persistence after reboot enter: `sudo systemctl disable sshd`
-##### Create a hosts file so you dont have to enter IP addresses every time
+##### Create a hosts file of servers you want to repeatedly log into so you dont have to enter IP addresses every time
 - Change to ssh directory: `cd .ssh`
 - Open vi and add the host data:
 - `vi config`
