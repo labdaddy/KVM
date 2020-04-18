@@ -1,4 +1,4 @@
-### SSH to remote hosts
+### OpenSSH setup
 - Install openssh: `sudo yum –y install openssh-server openssh-clients`
 - To start ssh: `sudo systemctl start sshd`
 - To check ssh status: `sudo systemctl status sshd`
