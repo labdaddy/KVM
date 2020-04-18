@@ -1,12 +1,12 @@
 ## KVM Setup
-- First steps: check to make sure the processor supports virtualization: `lscpu | grep Virtualization` Should return something like: VT-x
+- First step is check to make sure the processor supports virtualization: `lscpu | grep Virtualization` Should return something like: VT-x
 - Next update the system `sudo apt-get update` or `sudo yum update`
 - Then install virtualization packages for the operating system you are working with:
 - Ubuntu based systems: 
 - `sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils virt-manager virtinst cpu-checker virt-viewer`
 - Redhat/ Centos based systems: 
 - `yum install virt-manager libvirt libvirt-python python-virtinst`
-- (possible alternat, not tested)`yum install kvm qemu-kvm qemu-img virt-manager libvirt-client virt-install virt-viewer bridge-utils`
+- (possible alternate, not tested)`yum install kvm qemu-kvm qemu-img virt-manager libvirt-client virt-install virt-viewer bridge-utils`
 - Start and enable the libvirt service: `systemctl start libvirtd` enter then `systemctl enable libvirtd`
 - Trust but verify, make sure KVM is loaded: ` lsmod | grep kvm`
 - (possibly, this needs verification) In the case of using a minimal installation you will need the x-window package because virt-manager wont start: `yum install "@X Window System" xorg-x11-xauth xorg-x11-fonts-* xorg-x11-utils -y`
