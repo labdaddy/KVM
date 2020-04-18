@@ -7,6 +7,6 @@ Should return something like: VT-x
 #### Centos: `yum install virt-manager libvirt libvirt-python python-virtinst`
 - Alternate (needs verification) yum install kvm qemu-kvm qemu-img virt-manager libvirt libvirt-python libvirt-client virt-install virt-viewer bridge-utils-
 - Start and enable the libvirt service: `systemctl start libvirtd` enter then `systemctl enable libvirtd`
-- Make sure KVm is loaded: ` lsmod | grep kvm`
-- In the case of using a minimal installation you will need the x-window package because virt-manager wont start: `yum install "@X Window System" xorg-x11-xauth xorg-x11-fonts-* xorg-x11-utils -y`
+- Make sure KVM is loaded: ` lsmod | grep kvm`
+- (possibly, this needs verification) In the case of using a minimal installation you will need the x-window package because virt-manager wont start: `yum install "@X Window System" xorg-x11-xauth xorg-x11-fonts-* xorg-x11-utils -y`
 - Start virt-manager: `virt-manager`
