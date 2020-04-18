@@ -2,7 +2,7 @@
 
 #### To setup a network of virtual machines on the local host will require a few steps.
 
-1. Install and setup KVM - see separate instructions at KVM-setup
+1. Install and setup KVM - see separate instructions at [KVM-setup](KVM-setup.md)
 2. Setup networking in libvirt - see separate instructions at libvirt-network-setup
 3. Install and setup openssh - see separate instructions at openssh-setup
 4. Have fun !
