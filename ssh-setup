@@ -12,4 +12,6 @@
 - Change the SSH port to run on a non-standard port. For example: `Port 2002`
 ##### Save the file after edits and restart sshd: `service ssh resart`
 
-- To access a remote host type: `ssh@ipaddress` or `ssh@username`
+- To access a remote host type: `ssh ipaddress` or `ssh username@ipaddress`.
+- Logging in to a remote machine with `ssh ipaddress' the remote machine will assume you intend to use the same username you are currently logged in as.
+- Logging in as `ssh username@ipaddress` you will be prompted for the password of the user you are attempting to login as.
