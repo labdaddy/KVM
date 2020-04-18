@@ -1,7 +1,8 @@
 #### First and foremost. All credit due is given to the fine folks at Ubuntu for their KVM page on the Ubuntu help site. Check it out [here](https://help.ubuntu.com/community/KVM).
-#### Also to the amazing work of Jamie Nguyen on the [Libvirt Networking Handbook](https://jamielinux.com/docs/libvirt-networking-handbook/#libvirt-networking-handbook) for transforming a frustrating, complicated subject into clear understandable language. 
+#### Also to the amazing work of Jamie Nguyen on the [Libvirt Networking Handbook](https://jamielinux.com/docs/libvirt-networking-handbook/#libvirt-networking-handbook) for transforming a frustrating, complicated subject into clear understandable language. This book is so good it is referenced on the KVM Networking page of the Ubuntu site itself. See [here](https://help.ubuntu.com/community/KVM/Networking)
 
-
+#### Ubuntu
+###### 
 
 
 - Check network: `ip addr show virbr0`. This should show something like: 4: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
