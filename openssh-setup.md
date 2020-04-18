@@ -32,3 +32,4 @@
 - Verify key has been created: `cd .ssh`
 - List the contents of the ssh directory: `cd .ssh` then `ls`
 - Should show this: id_rsa id_rsa.pub known_hosts
+- Copy the 
