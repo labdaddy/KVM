@@ -1,4 +1,4 @@
-### KVM Setup: to a network of virtual machines on the local host will require a few steps. Follow along below and use the linnks to see more detailed instructions along the way.
+### KVM Setup: to create a network of virtual machines on the local host will require a few steps. Follow along below and use the linnks to see more detailed instructions along the way.
 
 1. Install and setup KVM - see instructions at KVM-setup
 2. Setup networking in libvirt - see instructions at libvirt-network-setup
