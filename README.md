@@ -7,7 +7,6 @@
 3. Install and setup openssh - see separate instructions at openssh-setup
 4. Have fun !
 
-### A note on virtualization: 
 #### The virtualization stack looks like this:
 - virtualization api (libvirt) ==> hardware assist (kvm) ==> hypervisor(QEMU) ==> physical hardware (machine)
 
