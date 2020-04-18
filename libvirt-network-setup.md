@@ -1,4 +1,4 @@
-### First and foremost. All credit due is given to the fine folks at Ubuntu for their KVM page on the Ubuntu help site. Visit [here](https://help.ubuntu.com/community/KVM) and to the amazing work of Jamie Nguyen on the Libvirt Networking Handbook which can be read [here](libvirt Networking Handbook) for making this project far less frustrating ! 
+### First and foremost. All credit due is given to the fine folks at Ubuntu for their KVM page on the Ubuntu help site. Visit [here](https://help.ubuntu.com/community/KVM) and to the amazing work of Jamie Nguyen on the [Libvirt Networking Handbook](https://jamielinux.com/docs/libvirt-networking-handbook/#libvirt-networking-handbook) for making this project far less frustrating ! 
 
 
 
