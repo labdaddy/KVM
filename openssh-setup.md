@@ -44,3 +44,6 @@
 - Agents allow us to ssh into the remote target machine without typing the passphrase every time. This is super convenient but also dangerous.
 - `ssh-agent bash` then `ssh-add` This will prompt for the password.
 - Now to ssh into remote servers just use `ssh server2` or whatever server names is in the known_hosts file
+
+##### Configure SSH to be more secure
+- 
