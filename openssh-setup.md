@@ -26,7 +26,7 @@
 - Logging in to a remote machine with `ssh ipaddress' the remote machine will assume you intend to use the same username you are currently logged in as.
 - Logging in as `ssh username@ipaddress` you will be prompted for the password of the user you are attempting to login as.
 
-##### Key based authentication is even more secure than logging in with passwords and should be setup right away. The generated key will be distributed to the other servers to alow authentication to these servers from the master machine.
+##### Key based authentication is even more secure than logging in with passwords and should be setup right away. The generated key will be distributed to the other servers to alow authentication to these servers from the master machine. The steps look like this: ssh-keygen ssh-copy-id ssh-agent. Detailed instructions below.
 - Generate a public key on the first server: `ssh-keygen -t rsa -b 4096`. This creates an RSA type public key to share with the remote server.
 - The system  will prompt for a passphrase which should be different than any password used on either system.
 - Verify key has been created: `cd .ssh`
@@ -34,8 +34,7 @@
 - Should show this: `id_rsa id_rsa.pub known_hosts`. The known_hosts file now has the public key, id_rsa.pub and id_rsa files have the public and private keys of my user account (root).
 - Make sure you and only you have access to this file with: `chmod 700 .ssh`
 - Next we need to get this PUBLIC key onto the target server.
-- This can be accomplished using secure copy or scp: `scp .ssh/id_rsa.pub {destination} username@IPaddress:/path/to/file` 
-- OR by using: `ssh-copy-id -i id_rsa.pub server2` (or whatever name you put into the known_host file)
+- This can be accomplished using secure copy or scp: `ssh-copy-id -i id_rsa.pub server2` (or whatever name you put into the known_host file) OR BY USING `scp .ssh/id_rsa.pub {destination} username@IPaddress:/path/to/file` 
 - The system will ask for the password and then show: `id_rsa.pub` to indicate successful copy.
 - Now we check to make sure it works: `ssh {servername}`. Enter password for key authentication when prompted. And now we should be on the other server. To verify this type: `ip a s` this will display ip address of the server you are logged into and should indicate that you are in fact on the remote server.
 - Now to make sure that everything is in order, check the authorized keys file: cat .ssh/authorized_keys. Should show a huge public key.
