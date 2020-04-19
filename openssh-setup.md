@@ -46,4 +46,13 @@
 - Now to ssh into remote servers just use `ssh server2` or whatever server names is in the known_hosts file
 
 ##### Configure SSH to be more secure
-- 
+- Login to the remote machine
+- `vi /etc/sh/ssh/sshd_config`
+- Scroll down to the line that reads `PermitRootLogin yes` and change it to `without-password`. This ensures that you can only connect if you have preshared the key as root. 
+- Save and exit.
+- Restart the ssh service: `systemctl restart sshd`
+- Type: `exit`
+- Now double check with: `ssh servername`
+- Should allow login with no password prompt 
+- No need to authenticate !
+
