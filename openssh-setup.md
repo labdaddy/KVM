@@ -31,7 +31,7 @@
 - The system  will prompt for a passphrase which should be different than any password used on either system.
 - Verify key has been created: `cd .ssh`
 - List the contents of the ssh directory: `cd .ssh` then `ls`
-- Should show this: `id_rsa id_rsa.pub known_hosts`. The config file has the servers login details, known_hosts file has the public key, id_rsa.pub has the public key of of my user account and the id_rsa file has the private key of my user account.
+- Should show this: `id_rsa id_rsa.pub known_hosts`. The known_hosts file has the public key, id_rsa.pub has the public key of of my user account and the id_rsa file has the private key of my user account.
 - Make sure you and only you have access to this file with: `chmod 700 .ssh`
 - Next we need to get this key onto the target server.
 - This can be accomplished using secure copy or scp: `scp .ssh/id_rsa.pub {destination} username@IPaddress:/path/to/file`
