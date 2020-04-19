@@ -48,7 +48,7 @@
 ##### Configure SSH to be more secure
 - Login to the remote machine
 - `vi /etc/sh/ssh/sshd_config`
-- Scroll down to the line that reads `PermitRootLogin yes` and change it to `without-password`. This ensures that you can only connect if you have preshared the key as root. 
+- Scroll down to the line that reads `PermitRootLogin yes` and uncomment the line and change the yes part to `without-password`. This ensures that you can only connect if you have preshared the key as root. 
 - Save and exit.
 - Restart the ssh service: `systemctl restart sshd`
 - Type: `exit`
