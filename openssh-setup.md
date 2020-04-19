@@ -37,4 +37,10 @@
 - This can be accomplished using secure copy or scp: `scp .ssh/id_rsa.pub {destination} username@IPaddress:/path/to/file` 
 - OR by using: `ssh-copy-id -i id_rsa.pub server2` (or whatever name you put into the known_host file)
 - The system will ask for the password and then show: `id_rsa.pub` to indicate successful copy.
-- 
+- Now we check to make sure it works: `ssh {servername}`. Enter password for key authentication when prompted. And now we should be on the other server. To verify this type: `ip a s` this will display ip address of the server you are logged into and should indicate that you are in fact on the remote server.
+- Now to make sure that everything is in order, check the authorized keys file: cat .ssh/authorized_keys. Should show a huge public key.
+
+##### Advanced ssh with agents
+- Agents allow us to ssh into the remote target machine without typing the passphrase every time. This is super convenient but also dangerous.
+- `ssh-agent bash` then `ssh-add` This will prompt for the password.
+- Now to ssh into remote servers just use `ssh server2` or whatever server names is in the known_hosts file
