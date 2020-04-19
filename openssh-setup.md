@@ -29,7 +29,10 @@
 ##### Key based authentication is even more secure than logging in with passwords and should be setup right away. The generated key will be distributed to the other servers to alow authentication to these servers from the master machine. The steps look like this:
 - ssh-keygen 
 - ssh-copy-id 
-- ssh-agent. 
+- ssh-agent
+- ssh-add
+- authorized_keys
+- 
 ##### Detailed instructions follow.
 - Generate a public key on the first server: `ssh-keygen -t rsa -b 4096`. This creates an RSA type public key to share with the remote server.
 - The system  will prompt for a passphrase which should be different than any password used on either system.
