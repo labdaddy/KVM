@@ -33,9 +33,8 @@
 - List the contents of the ssh directory: `cd .ssh` then `ls`
 - Should show this: `id_rsa id_rsa.pub known_hosts`. The known_hosts file now has the public key, id_rsa.pub and id_rsa files have the public and private keys of my user account (root).
 - Make sure you and only you have access to this file with: `chmod 700 .ssh`
-- Next we need to get this key onto the target server.
+- Next we need to get this PUBLIC key onto the target server.
 - This can be accomplished using secure copy or scp: `scp .ssh/id_rsa.pub {destination} username@IPaddress:/path/to/file` 
 - OR by using: `ssh-copy-id -i id_rsa.pub server2` (or whatever name you put into the known_host file)
 - The system will ask for the password and then show: `id_rsa.pub` to indicate successful copy.
-- Copy the id_rs ssh-copy-id -i id_rsa.pub server1
 - 
