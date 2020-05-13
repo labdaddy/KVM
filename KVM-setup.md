@@ -4,7 +4,7 @@
 - Then install virtualization packages for the operating system you are working with:
 - Ubuntu based systems: 
 - `sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils virt-manager virtinst cpu-checker virt-viewer`
-- Alternatively, for Ubuntu systems 18.10 and newer. Like 19 or 20 for example. Use: 'sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils'
+- Alternatively, for Ubuntu systems 18.10 and newer. Like 19 or 20 for example. Use: `sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager`
 - Redhat/ Centos based systems: 
 - `yum install virt-manager libvirt libvirt-python python-virtinst`
 - (possible alternate, not tested)`yum install kvm qemu-kvm qemu-img virt-manager libvirt-client virt-install virt-viewer bridge-utils`
