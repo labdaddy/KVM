@@ -8,7 +8,7 @@
 4. Have fun !
 
 #### The virtualization stack looks like this:
-- virtualization api (libvirt) ==> hardware assist (kvm) ==> hypervisor(QEMU) ==> physical hardware (machine)
+- libvirt (virtualization api) ==> kvm (hardware assist) ==> QEMU (hypervisor) ==> Machine (physical hardware)
 
 1. Libvirt is a virtualization API capable of managing QEMU+KVM to provide higher level functions such as storage and network management.
 2. KVM is a kernel module that exposes the /dev/kvm interface that can be used to perform hardware-assisted virtualization. This enables virtual machines to leverage fast CPU instructions to perform virtualization.
