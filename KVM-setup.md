@@ -30,6 +30,9 @@
 
 
 #### Redhat 7/ Centos 7 based systems: 
+- The below is straight from the RHEL 7 [Virtualization Deployment and Administration Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index)
+- `yum install qemu-kvm libvirt virt-install libvirt-python virt-manager virt-install libvirt-client`
+- Other options I've seen
 - `yum install virt-manager libvirt libvirt-python python-virtinst`
 - (possible alternate, not tested)`yum install kvm qemu-kvm qemu-img virt-manager libvirt-client virt-install virt-viewer bridge-utils`
 - Start the libvirt service: `systemctl start libvirtd` press enter 
