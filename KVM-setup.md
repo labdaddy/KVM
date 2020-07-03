@@ -1,11 +1,11 @@
-#### KVM Setup
+### KVM Setup
 - First step is check to make sure the processor supports virtualization. First way to check this: `lscpu | grep Virtualization` Should return something like: VT-x or AMD-V. Second way to check this: `egrep -c '(vmx|svm)' /proc/cpuinfo`. If the system returns 0 there is no onboard support for virtualization. Sorry. Need to buy a newer machine. If system returns 1 or greater you're aces.
 - Next update the system. Ubuntu: `sudo apt-get update` or Rhel/ CentOS: `sudo yum update`
 - Then install virtualization packages for the operating system you are working with and start creating VM's. 
 - See distro specific instructions below.
 
 
-#### Ubuntu based systems: 
+### Ubuntu based systems: 
 - For Ubuntu 10.04 - 18.04: `sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils virt-manager virtinst cpu-checker virt-viewer`
 - For newer Ubuntu systems like 18.10, 19 or 20. Use: `sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager`
 - Straight from the Ubuntu website:
@@ -29,7 +29,7 @@
 - STARTING A VM: `virsh start {vm name}`
 
 
-#### Redhat 7/ Centos 7 based systems: 
+### Redhat 7/ Centos 7 based systems: 
 - The below is straight from the RHEL 7 [Virtualization Deployment and Administration Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index)
 - `yum install qemu-kvm libvirt virt-install libvirt-python virt-manager virt-install libvirt-client`
 - Other options I've seen
