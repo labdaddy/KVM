@@ -35,8 +35,8 @@
 - Other options I've seen
 - `yum install virt-manager libvirt libvirt-python python-virtinst`
 - (possible alternate, not tested)`yum install kvm qemu-kvm qemu-img virt-manager libvirt-client virt-install virt-viewer bridge-utils`
-- Start the libvirt service: `systemctl start libvirtd` press enter 
 - Enable the libvirt service: `systemctl enable libvirtd`
+- Start the libvirt service: `systemctl start libvirtd` press enter 
 - Trust but verify. Make sure KVM is loaded: `lsmod | grep kvm`
 - (possibly, this needs verification) In the case of using a minimal installation you will need the x-window package because virt-manager wont start: `yum install "@X Window System" xorg-x11-xauth xorg-x11-fonts-* xorg-x11-utils -y`
 - Start virt-manager: `virt-manager`. The virtual machine manager GUI window will pop up on the screen.
