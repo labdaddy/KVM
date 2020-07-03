@@ -1,5 +1,5 @@
 #### KVM Setup
-- First step is check to make sure the processor supports virtualization. First way to check this: `lscpu | grep Virtualization` Should return something like: VT-x. Second way to check this: `egrep -c '(vmx|svm)' /proc/cpuinfo`. If the system returns 0 there is no onboard support for virtualization. Sorry. Need to buy a newer machine. If system returns 1 or greater you're aces.
+- First step is check to make sure the processor supports virtualization. First way to check this: `lscpu | grep Virtualization` Should return something like: VT-x or AMD-V. Second way to check this: `egrep -c '(vmx|svm)' /proc/cpuinfo`. If the system returns 0 there is no onboard support for virtualization. Sorry. Need to buy a newer machine. If system returns 1 or greater you're aces.
 - Next update the system. Ubuntu: `sudo apt-get update` or Rhel/ CentOS: `sudo yum update`
 - Then install virtualization packages for the operating system you are working with and start creating VM's. 
 - See distro specific instructions below.
