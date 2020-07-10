@@ -42,6 +42,7 @@
 - Trust but verify. Make sure KVM is loaded: `lsmod | grep kvm`
 - This should return something with KVM in it. AMD, VTX, something similar but it will include KVM.
 - (possibly, this needs verification) In the case of using a minimal installation you will need the x-window package because virt-manager wont start: `yum install "@X Window System" xorg-x11-xauth xorg-x11-fonts-* xorg-x11-utils -y`
+- Also, if you are trying to install a normal GUI version of a disto in a VM and you end up with the minimal version somehow you can always add the gnome desktop after the fact. See here.
 - Start virt-manager: `virt-manager`. The virtual machine manager GUI window will pop up on the screen.
 - Voila!
 - Also see significant additional detail online here: [RHEL 7 Virtualization Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_getting_started_guide/index).
