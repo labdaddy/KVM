@@ -30,7 +30,8 @@
 - STARTING A VM: `virsh start {vm name}`
 
 ### Redhat 7/ Centos 7 based systems: 
-- The below is straight from the RHEL 7 [Virtualization Deployment and Administration Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index)
+- From the RHEL 7 virtualization page at Red Hat [Virtualization Deployment and Administration Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index)
+- From the RHEL 8 virtualization page at Red Hat [Configuring and managing virtualization](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_virtualization/index)
 - `yum install qemu-kvm libvirt virt-install libvirt-python virt-manager libvirt-client`
 - Other options I've seen
 - `yum install virt-manager libvirt libvirt-python python-virtinst`
