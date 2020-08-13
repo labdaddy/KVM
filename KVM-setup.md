@@ -29,10 +29,9 @@
 - NOTE for the os-variant field. KVM requires super specific naming for the os-variant. There is a list of oses that are recognized as valid names. View this list with: `osinfo-query os`. The resulting list is all the os names you can use in this field.
 - STARTING A VM: `virsh start {vm name}`
 
-### Redhat 7/ Centos 7 based systems: 
-- From the RHEL 7 virtualization page at Red Hat [Virtualization Deployment and Administration Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index)
-- From the RHEL 8 virtualization page at Red Hat [Configuring and managing virtualization](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_virtualization/index)
-- `yum install qemu-kvm libvirt virt-install libvirt-python virt-manager libvirt-client`
+### For RHEL/ CentOS 7 & 8 systems: 
+- For RHEL 7/ CentOS 7: `yum install virt-install libvirt-python virt-manager virt-install libvirt-client`
+- For RHEL 8/ CentOS 8: `yum module install virt` `yum install virt-install virt-viewer` 
 - Other options I've seen
 - `yum install virt-manager libvirt libvirt-python python-virtinst`
 - (possible alternate, not tested)`yum install kvm qemu-kvm qemu-img virt-manager libvirt-client virt-install virt-viewer bridge-utils`
