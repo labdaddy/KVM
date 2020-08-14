@@ -30,7 +30,7 @@
 - STARTING A VM: `virsh start {vm name}`
 
 ### For RHEL/ CentOS 7 & 8 systems: 
-- For RHEL 7/ CentOS 7: `yum install virt-install virt-manager virt-install libvirt-client libvirt-python`
+- For RHEL 7/ CentOS 7: `yum install libvirt virt-install virt-manager virt-install libvirt-client libvirt-python`
 - For RHEL 8/ CentOS 8: `yum module install virt` `yum install virt-install virt-viewer` 
 - Other options I've seen
 - `yum install virt-manager libvirt libvirt-python python-virtinst`
