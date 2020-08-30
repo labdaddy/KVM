@@ -8,7 +8,7 @@
 
 #### Sample Setup Values: 
 virt-install --name server1 --memory 2048 --vcpus 1 --disk size=20 --os-variant centos8 --cdrom /home/primero/Documents/iso/CentOS-8.2.2004-x86_64-minimal.iso
-### NOTE: If you keep getting permission errors on the file path try shutting down the machine. Sometimes after restarting this command will suddenly work fine.
+##### NOTE: If you keep getting permission errors on the file path try shutting down the machine. Sometimes after restarting this command will suddenly work fine.
 
 ### Running VM's In KVM
 - using the `virsh start` utility: `virsh start` {vmname}
