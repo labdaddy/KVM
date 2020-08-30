@@ -7,7 +7,7 @@
 - --cdrom {for isos} {and then location such as} /home/username/Downloads/rhel8-iso
 
 #### Sample Setup Values: 
-virt-install --name demo-guest1 --memory 1024 --vcpus 1 --disk size=30 --os-variant win10 --cdrom /home/username/Downloads/Win10install.iso
+virt-install --name server1 --memory 2048 --vcpus 1 --disk size=20 --os-variant centos8 --cdrom /home/primero/Documents/iso/CentOS-8.2.2004-x86_64-minimal.iso
 
 ### Running VM's In KVM
 - using the `virsh start` utility: `virsh start` {vmname}
