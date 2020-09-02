@@ -19,10 +19,10 @@
 - Add user to KVM group: sudo adduser $USER kvm THIS IS VERY IMPORTANT. If you forget to do this on Ubuntu you will get an error of: ERROR unsupported configuration: CPU mode 'custom' for x86_64 kvm domain on x86_64 host is not supported by hypervisor. And troubleshooting this will be a pain.
 - Login again and check group membership: `exec su -l $USER then id | grep libvirt`
 - If that fails try: `exec su -l $USER`
-- KVM automatically creates a virtual switch that the VM's are connected to. The host interface on the switch is virbr0. The interface should be visible from the host machine using: ip addr show virbr0
 - Start of libvirtd (the virtualization api, see README for this repo): `sudo service libvirtd start`
 - Enable libvirtd (if needed): `sudo update-rc.d libvirtd enable`
 - Check status of libvirtd: `service libvirtd status`
+- KVM automatically creates a virtual switch that the VM's are connected to. The host interface on the switch is virbr0. The interface should be visible from the host machine using: ip addr show virbr0
 - Check network: `ip addr show virbr0`. This should show something like: `4: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000 link/ether 52:54:00:32:7e:07 brd ff:ff:ff:ff:ff:ff inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0 valid_lft forever preferred_lft forever`. Not exactly this but something similar.
 - List any VM's currently running on the machine: `virsh list --all`. Should show no running machines right now.
 - CREATING A NEW VM: `virt-install --name {os name} --memory {amount in Mib, 1024} --vcpus 1 --disk size=5 --os-variant {os} --cdrom {iso location}`
