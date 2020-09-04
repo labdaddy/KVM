@@ -35,9 +35,9 @@
 - Confirm the kernel modules are loaded: `sudo lsmod | grep kvm`
 - Start and enable libvirtd service: `sudo systemctl start libvirtd` then `sudo systemctl enable libvirtd`
 
-- For RHEL 8/ CentOS 8: `yum module install virt`
-- `yum install virt-install virt-viewer virt-top libguestfs-tools` 
-- And there is the optional GUI front end `virt-manager`
+- For RHEL 8/ CentOS 8: `sudo yum module install virt`
+- `sudo yum install virt-install virt-viewer virt-top libguestfs-tools` 
+- And there is the optional GUI front end `sudo virt-manager`
 - Make sure all is well: `virt-host-validate`
 - Enable the libvirt service with: `systemctl enable --now libvirtd`
 - There will be no response from the system
