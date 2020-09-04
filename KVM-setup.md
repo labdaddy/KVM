@@ -29,13 +29,18 @@
 - NOTE for the os-variant field. KVM requires super specific naming for the os-variant. There is a list of oses that are recognized as valid names. View this list with: `osinfo-query os`. The resulting list is all the os names you can use in this field.
 - STARTING A VM: `virsh start {vm name}`
 
-#### For RHEL 7/ CentOS 7: `sudo yum -y install epel-release` then;
+#### For RHEL 7/ CentOS 7: 
+- `sudo yum -y install epel-release` then;
 - `sudo yum -y install libvirt qemu-kvm virt-install virt-top libguestfs-tools bridge-utils` then;
 - Confirm the kernel modules are loaded: `sudo lsmod | grep kvm`
 - Start and enable libvirtd service: `sudo systemctl start libvirtd` then `sudo systemctl enable libvirtd`
 
-#### For RHEL 8/ CentOS 8: `sudo yum module install virt`
-- `sudo yum install virt-install virt-viewer virt-top libguestfs-tools` 
+#### For RHEL 8/ CentOS 8: 
+- `sudo yum -y install epel-release` then;
+- `sudo yum module install virt` then;
+- `sudo yum install virt-install virt-viewer virt-top libguestfs-tools` then;
+- Confirm the kernel modules are loaded: `sudo lsmod | grep kvm`
+- Start and enable libvirtd service: `sudo systemctl start libvirtd` then `sudo systemctl enable libvirtd`
 
 
 #### EITHER SYSTEM
