@@ -37,8 +37,8 @@
 
 #### For RHEL 8/ CentOS 8: 
 - `sudo yum -y install epel-release` then;
-- `sudo yum module install virt` then;
-- `sudo yum install virt-install virt-viewer virt-top libguestfs-tools` then;
+- `sudo yum -y module install virt` then;
+- `sudo yum -y install virt-install virt-viewer virt-top libguestfs-tools` then;
 - Confirm the kernel modules are loaded: `sudo lsmod | grep kvm`
 - Start and enable libvirtd service: `sudo systemctl start libvirtd` then `sudo systemctl enable libvirtd`
 
