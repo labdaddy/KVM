@@ -7,8 +7,10 @@
 - --cdrom {for isos} {and then location such as} /home/username/Downloads/rhel8-iso
 
 #### Sample Setup Values: 
-virt-install --name server1 --memory 2048 --vcpus 1 --disk size=20 --os-variant centos8 --cdrom /home/primero/Documents/iso/CentOS-8.2.2004-x86_64-minimal.iso
+- `sudo virt-install --name server1 --memory 2048 --vcpus 1 --disk size=20 --os-variant centos8 --cdrom /home/primero/Documents/iso/CentOS-8.2.2004-x86_64-minimal.iso`
+- `- sudo virt-install --name ubuntuserver --ram 2048 --vcpus 1 --cdrom /home/primero/Documents/iso/ubuntu-18.04.3-server-amd64.iso,size=20 --os-variant ubuntu18.04 --os-type linux`
 ##### NOTE: If you keep getting permission errors on the file path try shutting down the machine. Sometimes after restarting this command will suddenly work fine.
+
 
 ### Running VM's In KVM
 - using the `virsh start` utility: `virsh start` {vmname}
