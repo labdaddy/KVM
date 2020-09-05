@@ -10,7 +10,7 @@
 - `sudo virt-install --name server1 --memory 2048 --vcpus 1 --disk size=20 --os-variant centos8 --cdrom /home/primero/Documents/iso/CentOS-8.2.2004-x86_64-minimal.iso`
 - `sudo virt-install --name ubuntuserver --ram 2048 --vcpus 1 --disk size=20 --cdrom /home/primero/Documents/iso/ubuntu-18.04.3-server-amd64.iso --os-variant ubuntu18.04 --os-type linux`
 ##### NOTE: If you keep getting permission errors on the file path try shutting down the machine. Sometimes after restarting this command will suddenly work fine.
-In Ubuntu 20, another issue could be that AppArmor is getting in the way. If you are getting errors like "failed to connect" or "not connected to KVM/ QEMU" or something similar, its probably AppArmor.
+In Ubuntu 20, another issue could be that AppArmor is getting in the way. If you are getting errors like "failed to connect" or "not connected to KVM/ QEMU" or something similar, its probably AppArmor. The content below is from the following source: [Kifarunix](https://kifarunix.com/how-to-fix-qemu-kvm-not-connected-error-on-ubuntu-20-04/)
 
 To do some checking: `id -nG` will make sure that you are part of the libvirt group.
 
