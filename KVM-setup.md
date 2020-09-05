@@ -17,8 +17,8 @@
 - Check KVM readiness: `sudo virt-host-validate`. 
 - Can also check with" `lsmod | grep kvm`
 - Add user to libvirt groups: `cat /etc/group | grep libvirt | awk -F':' {'print $1'} | xargs -n1 sudo adduser $USER`
-- Add user to KVM group: `sudo adduser $USER kvm` THIS IS VERY IMPORTANT. If you forget to do this on Ubuntu you will get an error of: ERROR unsupported configuration: CPU mode 'custom' for x86_64 kvm domain on x86_64 host is not supported by hypervisor. And troubleshooting this will be a pain.
-- Login again and check group membership: `exec su -l $USER then id | grep libvirt`
+- THIS IS VERY IMPORTANT. If you forget to do this on Ubuntu you will get an error of: ERROR unsupported configuration: CPU mode 'custom' for x86_64 kvm domain on x86_64 host is not supported by hypervisor. And troubleshooting this will be a pain. Do this with: `sudo adduser $USER kvm` 
+- Login again and check group membership: `exec su -l $USER` then type: `id | grep libvirt`
 - If that fails try: `exec su -l $USER`
 - Start of libvirtd (the virtualization api, see README for this repo): `sudo service libvirtd start`
 - Enable libvirtd (if needed): `sudo update-rc.d libvirtd enable`
