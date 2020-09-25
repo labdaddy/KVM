@@ -8,8 +8,7 @@
 Now we want to attach the disk to the virtual machine
 - Check for the name of the current disk so we know what to attach to: `df`
 - Now attach the new disk: `virsh attach-disk vm-name /var/lib/libvirt/images/img-name vdb --cache none
-- Or use: 
-- ` virsh attach-disk vm-name \`
+- Or use: ` virsh attach-disk vm-name \`
 - `--source /var/lib/libvirt/images/img-name \`
 - `--target vdb \`
 - `--persistent`
