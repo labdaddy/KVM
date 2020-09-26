@@ -18,7 +18,7 @@ Or use:
 Example: attach the disk image ‘/var/lib/libvirt/images/mynewdisk‘ as a virtio disk to the VM/domain named ‘ubuntu-box1‘ and update the domain xml file for new disk (type command on the host):
 $ sudo virsh attach-disk mynewdisk /var/lib/libvirt/images/ubuntu-box1-vm-disk1-5G vdb --cache none
 
-- Partition the disk from inside the VM using elevated privelege, then the disk you want to partition: `sudo fdisk /dev/vdb (or whatever the disk name is)
+- Partition the disk from inside the VM using elevated privelege, then the disk you want to partition: `sudo fdisk /dev/vdb` (or whatever the disk name is)
 - Then select new partition with: `n`
 - Default partition: `p` (for primary)
 - Partition number: `1` (or whatever number)
