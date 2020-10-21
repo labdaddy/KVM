@@ -1,4 +1,4 @@
-Installing VMware Workstation on Linux
+#### Installing VMware Workstation on Linux
 Go to the directory where you saved the downloaded installer file. In the current example the VMware Workstation installer is located in the Downloads directory:
 
 cd /home/user1/Downloads/
@@ -26,3 +26,14 @@ GNU C Compiler must be installed before running the VMware Workstation. In order
 sudo apt-get -y install gcc make linux-headers-$(uname -r) dkms
 
 The interfaces of VMware Workstation for Linux and for Windows are identical. Below you can see the screenshot of the interface of VMware Workstation 15 running on Linux.
+
+#### Installing VMware Workstation on Windows
+Go to the directory where you saved the downloaded installer and run the installer file. The name of the file is VMware-workstation-full-15.0.2-10952284.exe in this case. Similarly to the installation on Linux, a wizard opens. After configuring options click Next for switching to the next step of the wizard.
+
+On the Welcome screen click Next.
+Accept the license agreement.
+Select the installation destination.
+Tick the checkboxes if you want to check for updates on startup and join the VMware Customer Experience Improvement Program.
+Select the shortcuts you wish to place on your system.
+Hit Install to begin the installation.
+The final installation screen allows you to enter a license (is not necessary for a free trial mode).
