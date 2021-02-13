@@ -15,4 +15,4 @@ Configuring…
 [######################################################################] 100%
 Installation was successful.`
 #### Then launch the graphical Workstation Player using the icon in the programs dashboard.
-#### Accept the terms of use, say yes to updates, skip the license and press install.
+#### Accept the terms of use, say yes to updates, join the CEIP program or not, select the free non-commercial license and press install.
