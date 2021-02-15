@@ -3,11 +3,11 @@ After installation is complete we need to update. We are using the free communit
 - Click the name of your server
 - Then click `shell` over on the right
 - Then type all of the following:
-- `cd /etc/apt/sources.list.d`
-- `mv pve-enterprise.list pve-enterprise.list.disabled`
-- `echo 'deb http://download.proxmox.com/debian/pve buster pve-no-subscription' > pve-community.list`
-- `apt update`
-- `apt -y dist-upgrade`
+- `cd /etc/apt/sources.list.d` and press `enter`
+- `mv pve-enterprise.list pve-enterprise.list.disabled` and press `enter`
+- `echo 'deb http://download.proxmox.com/debian/pve buster pve-no-subscription' > pve-community.list` and press `enter`
+- `apt update` and press `enter`
+- `apt -y dist-upgrade` and press `enter`
 - Then reboot using the `reboot` button over on the right.
 - Once that is done we need to actually do the updates.
 - Click on the name of your server again. 
