@@ -2,4 +2,4 @@
 
 #### VIRTUALIZATION DETAILS
 
-Virtualization notes and tips
+Virtualization tips, tricks and walkthroughs
