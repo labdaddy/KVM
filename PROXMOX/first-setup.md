@@ -8,5 +8,4 @@ After installation is complete we need to update. We are using the free communit
 - `echo 'deb http://download.proxmox.com/debian/pve buster pve-no-subscription' > pve-community.list`
 - `apt update`
 - `apt -y dist-upgrade`
-- Then reboot
-- All done.
+- Then reboot. And you're all done.
