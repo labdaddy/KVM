@@ -15,4 +15,5 @@ After installation is complete we need to update. We are using the free communit
 - After the popup window does its thing and finishes with "OK" close the popup box.
 - Next click `upgrade` and another window pops up. Press `y` and then `enter` and then when it also does its thing and finishes you close that window as well.
 - Reboot if it tells you to. (use the `reboot` button over on the right)
+- Done.
 
