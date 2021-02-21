@@ -1,5 +1,7 @@
 #### NEW VM BOILERPLATE
 
+This awesomely helpful boilerplate info is from the dlford.io homelab tutorial found [here.](https://www.dlford.io/pfsense-nat-how-to-home-lab-part-3/) 
+
 Anytime you clone a VM, you should run the following commands to ensure the new system is seen as a unique machine on the network and maintain some entropy for SSH if it is installed (it should also receive a unique MAC address for all network interfaces when you run the clone operation). All of the commands below should be run as the root user, this can be achieved on Ubuntu by preceding each command with sudo, or first running the command sudo -i to start a root session.
 
 These commands are specific to Ubuntu, consult your distribution’s documentation if you are not using Ubuntu. What we are doing is deleting the machine-id from both locations `/etc/ and /var/lib/dbus`, creating a new machine-id in /etc/ and symlinking it to /var/lib/dbus.
