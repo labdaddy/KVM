@@ -1,4 +1,4 @@
-### Quick way to install Docker and Portainer on Proxmox (this was found on the internet at [getmethegeek.com](https://getmethegeek.com/blog/2020-04-20-installing-docker-and-portainer-on-proxmox/). 
+### Quick way to install Docker and Portainer on Proxmox (this was found on the internet at [getmethegeek.com](https://getmethegeek.com/blog/2020-04-20-installing-docker-and-portainer-on-proxmox/)).
 I have one of my Proxmox machines up and one of the first things you will want to do is to update.
 
 `apt update && apt dist-upgrade -y`
