@@ -24,6 +24,8 @@ Identify the new drive
 - Now check with lsblk command again
 - `lsblk`
 - Now the new formatted drive is visible
+- Prepare the disk to store the VM backups. We will create a special folder for this purpose.
+- `mkdir /mnt/storage2/vm_backup`
 - Prepare the disk for Proxmox backups
-- Vavigate to `Datacenter >> Storage >> Add >> Directory`. Enter the required information there.
+- Navigate to `Datacenter >> Storage >> Add >> Directory`. Enter the required information there.
 - Click `add` and you're done
