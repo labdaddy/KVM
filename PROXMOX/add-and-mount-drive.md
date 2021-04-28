@@ -25,5 +25,5 @@ Identify the new drive
 - `lsblk`
 - Now the new formatted drive is visible
 - Prepare the disk for Proxmox backups
-- Vavigate to `Datacenter >> Storage >> Add>>Directory`. Enter the required information there.
+- Vavigate to `Datacenter >> Storage >> Add >> Directory`. Enter the required information there.
 - Click `add` and you're done
